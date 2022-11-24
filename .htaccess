@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^index index.html [NC]
+RewriteRule ^netix netix.html [NC]
+RewriteRule ^deluca deluca.html [NC]
+# # av:Toolbar
+SetEnv AV_TOOLBAR 0
