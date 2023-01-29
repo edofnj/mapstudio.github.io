@@ -62,17 +62,7 @@ class ConfigControllerApplicationSave extends JControllerBase
 		// Handle service requests
 		if ($saveFormat == 'json')
 		{
-			$form = $model->getForm();
-			$return = $model->validate($form, $data);
-
-			if ($return === false)
-			{
-				$this->app->setHeader('Status', 422, true);
-
-				return false;
-			}
-
-			return $model->save($return);
+			return $model->save($data);
 		}
 
 		// Must load after serving service-requests

@@ -82,8 +82,7 @@ class HelpButton extends ToolbarButton
 	{
 		// Get Help URL
 		$url = Help::createUrl($ref, $com, $override, $component);
-		$url = json_encode(htmlspecialchars($url, ENT_QUOTES), JSON_HEX_APOS);
-		$url = substr($url, 1, -1);
+		$url = htmlspecialchars($url, ENT_QUOTES);
 		$cmd = "Joomla.popupWindow('$url', '" . \JText::_('JHELP', true) . "', 700, 500, 1)";
 
 		return $cmd;

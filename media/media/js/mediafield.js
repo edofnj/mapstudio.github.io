@@ -151,7 +151,7 @@
 				imgPreview.src = this.options.basepath + value;
 
 				this.$containerPreview.popover({content: imgPreview});
-				this.$input.tooltip({placement: 'top', title: value, html: false});
+				this.$input.tooltip({placement: 'top', title: value});
 			}
 		}
 	};

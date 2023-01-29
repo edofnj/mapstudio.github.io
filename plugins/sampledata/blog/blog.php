@@ -9,9 +9,7 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Multilanguage;
-use Joomla\CMS\Session\Session;
 
 /**
  * Sampledata - Blog Plugin
@@ -65,11 +63,6 @@ class PlgSampledataBlog extends JPlugin
 	 */
 	public function onSampledataGetOverview()
 	{
-		if (!Factory::getUser()->authorise('core.create', 'com_content'))
-		{
-			return;
-		}
-
 		$data              = new stdClass;
 		$data->name        = $this->_name;
 		$data->title       = JText::_('PLG_SAMPLEDATA_BLOG_OVERVIEW_TITLE');
@@ -89,12 +82,12 @@ class PlgSampledataBlog extends JPlugin
 	 */
 	public function onAjaxSampledataApplyStep1()
 	{
-		if (!Session::checkToken('get') || $this->app->input->get('type') != $this->_name)
+		if ($this->app->input->get('type') != $this->_name)
 		{
 			return;
 		};
 
-		if (!JComponentHelper::isEnabled('com_content') || !Factory::getUser()->authorise('core.create', 'com_content'))
+		if (!JComponentHelper::isEnabled('com_content'))
 		{
 			$response            = array();
 			$response['success'] = true;
@@ -312,12 +305,12 @@ class PlgSampledataBlog extends JPlugin
 	 */
 	public function onAjaxSampledataApplyStep2()
 	{
-		if (!Session::checkToken('get') || $this->app->input->get('type') != $this->_name)
+		if ($this->app->input->get('type') != $this->_name)
 		{
 			return;
 		}
 
-		if (!JComponentHelper::isEnabled('com_menus') || !Factory::getUser()->authorise('core.create', 'com_menus'))
+		if (!JComponentHelper::isEnabled('com_menus'))
 		{
 			$response            = array();
 			$response['success'] = true;
@@ -613,12 +606,12 @@ class PlgSampledataBlog extends JPlugin
 	 */
 	public function onAjaxSampledataApplyStep3()
 	{
-		if (!Session::checkToken('get') || $this->app->input->get('type') != $this->_name)
+		if ($this->app->input->get('type') != $this->_name)
 		{
 			return;
 		}
 
-		if (!JComponentHelper::isEnabled('com_modules') || !Factory::getUser()->authorise('core.create', 'com_modules'))
+		if (!JComponentHelper::isEnabled('com_modules'))
 		{
 			$response            = array();
 			$response['success'] = true;

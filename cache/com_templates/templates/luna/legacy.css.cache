@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:75:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/bootstrap.less";s:8:"compiled";s:27509:".clearfix {
+a:4:{s:4:"root";s:68:"C:\xampp\htdocs\mapstudio1\templates/luna/less/legacy/bootstrap.less";s:8:"compiled";s:27509:".clearfix {
   *zoom: 1;
 }
 .clearfix:before,
@@ -1113,4 +1113,4 @@ legend + .control-group {
     right: 10px;
   }
 }
-";s:5:"files";a:8:{s:75:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/bootstrap.less";i:1552584306;s:75:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/variables.less";i:1552584307;s:72:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/mixins.less";i:1552584306;s:70:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/grid.less";i:1552584306;s:71:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/forms.less";i:1552584306;s:71:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/wells.less";i:1552584308;s:75:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/accordion.less";i:1552584305;s:93:"/web/htdocs/www.mapstudio.it/home/templates/luna/less/legacy/responsive-767px-max.joomla.less";i:1552584307;}s:7:"updated";i:1552985425;}
+";s:5:"files";a:8:{s:68:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\bootstrap.less";i:1543915772;s:68:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\variables.less";i:1543915772;s:65:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\mixins.less";i:1543915772;s:63:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\grid.less";i:1543915772;s:64:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\forms.less";i:1543915772;s:64:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\wells.less";i:1543915772;s:68:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\accordion.less";i:1543915772;s:86:"C:\xampp\htdocs\mapstudio1\templates\luna\less\legacy\responsive-767px-max.joomla.less";i:1543915772;}s:7:"updated";i:1549462995;}

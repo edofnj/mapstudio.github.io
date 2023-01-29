@@ -122,7 +122,6 @@
 			label="COM_BANNERS_FIELD_CLICKURL_LABEL"
 			description="COM_BANNERS_FIELD_CLICKURL_DESC"
 			filter="url"
-			validate="url"
 		/>
 	</fieldset>
 

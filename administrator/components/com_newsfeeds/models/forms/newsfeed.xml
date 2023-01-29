@@ -105,7 +105,6 @@
 			size="60"
 			required="true"
 			filter="url"
-			validate="url"
 		/>
 
 		<field

@@ -44,7 +44,7 @@ var SnippetHighlightRules = function() {
         "regexp" : [
             {regex: /\\./, token: "escape"},
             {regex: /\[/, token: "regex.start", next: "charClass"},
-            {regex: "/", token: "string.regex", next: "format"},
+            {regex: "/", token: "string.regex", next: "format"},
             {"token": "string.regex", regex:"."},
         ],
         charClass : [
@@ -55,7 +55,7 @@ var SnippetHighlightRules = function() {
         "format" : [
             {regex: /\\[ulULE]/, token: "keyword"},
             {regex: /\$\d+/, token: "variable"},
-            {regex: "/[gim]*:?", token: "string.regex", next: "start"},
+            {regex: "/[gim]*:?", token: "string.regex", next: "start"},
             {"token": "string", regex:"."},
         ]
     };

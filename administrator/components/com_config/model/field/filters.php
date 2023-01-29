@@ -104,7 +104,7 @@ class JFormFieldFilters extends JFormField
 				. ' name="' . $this->name . '[' . $group->value . '][filter_tags]"'
 				. ' type="text"'
 				. ' id="' . $this->id . $group->value . '_filter_tags" class="novalidate"'
-				. ' value="' . htmlspecialchars($group_filter['filter_tags'], ENT_QUOTES) . '"'
+				. ' value="' . $group_filter['filter_tags'] . '"'
 				. '/>';
 			$html[] = '		</td>';
 			$html[] = '		<td>';
@@ -112,7 +112,7 @@ class JFormFieldFilters extends JFormField
 				. ' name="' . $this->name . '[' . $group->value . '][filter_attributes]"'
 				. ' type="text"'
 				. ' id="' . $this->id . $group->value . '_filter_attributes" class="novalidate"'
-				. ' value="' . htmlspecialchars($group_filter['filter_attributes'], ENT_QUOTES) . '"'
+				. ' value="' . $group_filter['filter_attributes'] . '"'
 				. '/>';
 			$html[] = '		</td>';
 			$html[] = '	</tr>';
